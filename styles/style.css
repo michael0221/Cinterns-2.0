@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: GTWalsheimPro;
+}
+.container{
+    background-image: url("../images/mars-sector-6-kwzWjTnDPLk-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.411);
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+li{
+    list-style: none;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    /* color: #f8f8ff;; */
+    color: #fff;
+}
+.hero-section{
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: brightness(40%);
+    /* background-image: linear-gradient(to right, #8e2de2, #4a00e0); */
+    /* background-image: linear-gradient(to right, #00b4db, #0083b0); */
+}
+.hero-section_text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 130px;
+    color: rgb(175, 170, 165);
+}
+.hero-section_text h1{                                       /* Ndiomu */
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #8367C7 0%,
+      #b6b1b1 29%,
+      blueviolet 67%,
+      #b6b1b1 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    font-size: 100px;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+}
+@keyframes textclip {                                   /* Ndiomu */
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  .section-b{                                             /* Ndiomu */
+    height: auto;
+    background-color: #2f3061;
+    padding-bottom: 30px;
+    color: #fff;
+}
+.section-head{                                          /* Ndiomu */
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 55px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.section-cards{                                         /* Ndiomu */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 200px;
+    height: 85%;
+}
+.section-cards-1{                                       /* Ndiomu */
+    /* border: 1px solid red; */
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #f8f8ff;
+    color: #fff;
+    /* margin-bottom: 20px; */
+    background: rgba( 39, 39, 52, 0.85 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.section-cards-1 h3{                                    /* Ndiomu */
+    font-size: 23px;
+    margin-top: 13px;
+    margin-bottom: 15px;
+}
+.section-cards-1 p{
+    line-height: 20px;
+}
+.web-dev{                                                /* Ndiomu */
+    width: 100%;
+}
+.Ui-image{                                               /* Ndiomu */
+    width: 60%;
+}
