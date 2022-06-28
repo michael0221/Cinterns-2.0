@@ -5,11 +5,11 @@
     font-family: GTWalsheimPro;
 }
 .container{
-    background-image: url("../images/mars-sector-6-kwzWjTnDPLk-unsplash.jpg");
+    /* background-image: url("../images/mars-sector-6-kwzWjTnDPLk-unsplash.jp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 html{
     scroll-behavior: smooth;
@@ -18,6 +18,9 @@ nav{
     position: sticky;
     top: 0;
     background: rgba(0, 0, 0, 0.411);
+}
+nav a{
+    color: #fff;
 }
 ul{
     display: flex;
@@ -32,35 +35,49 @@ li{
 a{
     text-decoration: none;
     /* color: #f8f8ff;; */
-    color: #fff;
+    color: blueviolet;
 }
 .hero-section{
     height: 100vh;
     width: 100%;
-    backdrop-filter: brightness(40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E9F0FF;
+    /* backdrop-filter: brightness(40%); */
     /* background-image: linear-gradient(to right, #8e2de2, #4a00e0); */
     /* background-image: linear-gradient(to right, #00b4db, #0083b0); */
 }
 .hero-section_text{
-    width: 100%;
-    height: auto;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: ;
+    font-size: 20px;
+    padding-top: 9%;
+    /* justify-content: center; */
+    padding-left: 50px;
+    color: #000;
+}
+.hero-section_image{
+    width: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
-    font-size: 20px;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 130px;
-    color: rgb(175, 170, 165);
+}
+.hero-section_image img{
+    width: 80%;
 }
 .hero-section_text h1{                                       /* Ndiomu */
     text-transform: uppercase;
     background-image: linear-gradient(
       -225deg,
-      #8367C7 0%,
-      #b6b1b1 29%,
+      #A67BF2 0%,
+      #0E0E8C 29%,
       blueviolet 67%,
-      #b6b1b1 100%
+      #6349E5 100%
     );
     background-size: auto auto;
     background-clip: border-box;
@@ -81,8 +98,8 @@ a{
 
   .section-b{                                             /* Ndiomu */
     height: auto;
-    background-color: #2f3061;
-    padding-bottom: 30px;
+    background-color: #090955c4;
+    padding-bottom: 50px;
     color: #fff;
 }
 .section-head{                                          /* Ndiomu */
@@ -110,10 +127,10 @@ a{
     background-color: #f8f8ff;
     color: #fff;
     /* margin-bottom: 20px; */
-    background: rgba( 39, 39, 52, 0.85 );
+    background: rgba( 255, 255, 255, 0.3 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 7px );
-    -webkit-backdrop-filter: blur( 7px );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -131,3 +148,113 @@ a{
 .Ui-image{                                               /* Ndiomu */
     width: 60%;
 }
+.section-2{                                             
+    /* background: rgb(34, 34, 34); */
+    /* background:linear-gradient(45deg, #9ec9ea, #61559b); */
+    background: linear-gradient(to right, #7f3cf1, #3d1ce0 );
+    padding: 45px 5px;
+}
+.section-c{                                             /* Ndiomu */
+    background: linear-gradient(to right, #7f3cf1, #3d1ce0 );
+    padding: 45px 5px;
+    /* border-bottom: 10px solid #1a1a1aee;
+    border-top: 10px solid #4b19a144; */
+}
+.mentor-container{                                      /* Ndiomu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.h2{
+    padding-bottom: 30px;
+    font-size: 25px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    color: #f8f8ff;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contain{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.containn{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    position: relative;
+    width: 250px;
+    margin: 40px 20px;
+    height: 190px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+  }
+  .card:hover{
+    height: 200px;
+    cursor: pointer;
+  }
+  
+  .imgBx{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 15px 50px rgba(0,0,0,0.35);
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  .card:hover .imgBx{
+    height: 140px;
+    width: 150px;
+  }
+  .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .card .content .details{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.2s;
+  }
+  .card .content .details h2{
+    padding-top: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.2em;
+  }
+  
+  .card .content .details h2 span{
+    font-size: 0.8em;
+    font-weight: 500;
+    line-height: 1.2em;
+    color: #999;
+  }
