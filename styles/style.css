@@ -1,8 +1,20 @@
+@font-face {
+    font-family: "GTWalshiemPro";
+    font-weight: 100;
+    src: url("../fonts/GTWalsheimPro-Regular.ttf") format("embedded-opentype"),
+      url("../fonts/GTWalsheimPro-Regular.ttf") format("truetype");
+  }
+    @font-face {
+        font-family: "Grifterbold";
+        font-weight: 200;
+        src: url("../fonts/grifterbold.otf") format("embedded-opentype"),
+        url("../fonts/grifterbold.otf") format("truetype");
+    }
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: GTWalsheimPro;
+    /* font-family: GTWalshiemPro; */
 }
 .container{
     /* background-image: url("../images/mars-sector-6-kwzWjTnDPLk-unsplash.jp");
@@ -53,7 +65,8 @@ a{
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: ;
+    /* align-items: ; */
+    font-family: Grifterbold;
     font-size: 20px;
     padding-top: 9%;
     /* justify-content: center; */
@@ -100,10 +113,12 @@ a{
     height: auto;
     background-color: #090955c4;
     padding-bottom: 50px;
+    font-family: GTWalshiemPro;
     color: #fff;
 }
 .section-head{                                          /* Ndiomu */
     text-align: center;
+    font-family: GTWalshiemPro;
     padding-top: 40px;
     margin-bottom: 55px;
     font-size: 40px;
@@ -113,6 +128,7 @@ a{
     /* border: 2px solid black; */
     display: flex;
     flex-direction: row;
+    font-family: GTWalshiemPro;
     /* align-items: center; */
     justify-content: center;
     gap: 200px;
@@ -132,15 +148,18 @@ a{
     backdrop-filter: blur( 7.5px );
     -webkit-backdrop-filter: blur( 7.5px );
     border-radius: 10px;
+    font-family: GTWalshiemPro;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .section-cards-1 h3{                                    /* Ndiomu */
     font-size: 23px;
     margin-top: 13px;
+    font-family: Grifterbold;
     margin-bottom: 15px;
 }
 .section-cards-1 p{
     line-height: 20px;
+    font-family: GTWalshiemPro;
 }
 .web-dev{                                                /* Ndiomu */
     width: 100%;
@@ -171,6 +190,7 @@ a{
     font-size: 25px;
     margin-bottom: 35px;
     text-transform: uppercase;
+    font-family: Grifterbold;
     font-weight: 700;
     text-align: center;
     color: #f8f8ff;
@@ -242,11 +262,13 @@ a{
   .card .content .details{
     padding: 40px;
     text-align: center;
+    font-family: GTWalshiemPro;
     width: 100%;
     transition: 0.2s;
   }
   .card .content .details h2{
     padding-top: 15px;
+    font-family: GTWalshiemPro;
     font-size: 1.2em;
     font-weight: 600;
     line-height: 1.2em;
@@ -254,6 +276,7 @@ a{
   
   .card .content .details h2 span{
     font-size: 0.8em;
+    font-family: GTWalshiemPro;
     font-weight: 500;
     line-height: 1.2em;
     color: #999;
