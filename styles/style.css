@@ -49,7 +49,6 @@ li{
 }
 a{
     text-decoration: none;
-    /* color: #f8f8ff;; */
     color: blueviolet;
 }
 .hero-section{
@@ -64,6 +63,83 @@ a{
     /* background-image: linear-gradient(to right, #8e2de2, #4a00e0); */
     /* background-image: linear-gradient(to right, #00b4db, #0083b0); */
 }
+.arrow{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
+.arrow span{
+    display: none;
+    width: 25px;
+    height: 25px;
+    border-bottom: 5px solid #011b29;
+    border-right: 5px solid #011b29;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: scroll 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -.4s;
+}
+
+@keyframes scroll{
+    0%{
+        opacity: 1;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+.button{
+    margin-top: 30px;
+    width: 25%;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    background-color: #7f3cf1;
+    border-radius: 10px;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+.bulb-container{
+    position: absolute;
+    top: 70px;
+    left: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+}
+.laptop{
+    width: 130px;
+    position: relative;
+    top: 30px;
+}
+.lightBulb{
+    width: 60px;
+}
+.bulb-1{
+    transform: rotate(-40deg);
+}
+.bulb-2{
+    position: relative;
+    bottom: 20px;
+}
+.bulb-3{
+    transform: rotate(40deg);
+}
+
 .hero-section_text{
     width: 50%;
     height: 100%;
@@ -88,7 +164,26 @@ a{
 .hero-section_image img{
     width: 80%;
 }
-
+.cinfores{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      blueviolet 0%,
+      #0E0E8C 29%,
+      blueviolet 67%,
+      #0e0e8c 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    /* font-size: 100px; */
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+}
 .hero-section_text h1{                                       /* Ndiomu */
     text-transform: uppercase;
     /* background-image: linear-gradient(
@@ -383,6 +478,9 @@ a{
     margin-bottom: 10px;
     font-size: 25px;
 }
+.content__details{
+    width: 70%;
+}
 .content__details p{
     font-size: 15px;
     margin-bottom: 5px;
@@ -444,9 +542,6 @@ footer{
     transition:all 300ms ease-in-out;
     transform:translate(-50%,-50%) scale(1);
 }
-.cinfores{
-    color: #333333;
-}
 .socials{
     display: flex;
     align-items: center;
@@ -455,4 +550,70 @@ footer{
 }
 .socials i{
     font-size: 28px;
+}
+
+@media screen and (max-width: 768px) {
+    .bulb-container{
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .hero-section_image img{
+        display: none;
+    }
+    .mentor-container{
+        display: none;
+    }
+    .section-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .section-cards-1{
+        width: 90%;
+    }
+    .hero-section_image{
+        display: none;
+    }
+    .hero-section_text{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 120px;
+    }
+    .hero-section_text h1{
+        font-size: 70px;
+        line-height: 80px;
+    }
+    .button{
+        display: none;
+    }
+    .arrow{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+    }
+    
+    .arrow span{
+        display: block;
+        width: 25px;
+        height: 25px;
+        border-bottom: 5px solid #3d1ce0;
+        border-right: 5px solid #7f3cf1;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: scroll 2s infinite;
+    }
+    .arrow span:nth-child(2){
+        animation-delay: -.2s;
+    }
+    .arrow span:nth-child(3){
+        animation-delay: -.4s;
+    }
 }

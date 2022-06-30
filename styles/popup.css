@@ -6,7 +6,8 @@ aside.modal {
     background-color: #000000cb;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    /* display: flex; */
+    display: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
