@@ -2,13 +2,13 @@
     font-family: "GTWalshiemPro";
     font-weight: 100;
     src: url("../fonts/GTWalsheimPro-Regular.ttf") format("embedded-opentype"),
-    url("../fonts/GTWalsheimPro-Regular.ttf") format("truetype");
+      url("../fonts/GTWalsheimPro-Regular.ttf") format("truetype");
 }
 @font-face {
-    font-family: "Grifterbold";
-    font-weight: 200;
-    src: url("../fonts/grifterbold.otf") format("embedded-opentype"),
-    url("../fonts/grifterbold.otf") format("truetype");
+        font-family: "Grifterbold";
+        font-weight: 200;
+        src: url("../fonts/grifterbold.otf") format("embedded-opentype"),
+        url("../fonts/grifterbold.otf") format("truetype");
 }
 
 *{
