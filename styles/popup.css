@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "GTWalshiemPro";
+    font-weight: 100;
+    src: url("../fonts/GTWalsheimPro-Regular.ttf") format("embedded-opentype"),
+      url("../fonts/GTWalsheimPro-Regular.ttf") format("truetype");
+}
+@font-face {
+        font-family: "Grifterbold";
+        font-weight: 200;
+        src: url("../fonts/grifterbold.otf") format("embedded-opentype"),
+        url("../fonts/grifterbold.otf") format("truetype");
+}
 aside.modal {
     position: fixed;
     width: 100%;
@@ -6,8 +18,8 @@ aside.modal {
     background-color: #000000cb;
     display: -webkit-box;
     display: -ms-flexbox;
-    /* display: flex; */
-    display: none;
+    display: flex;
+    /* display: none; */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -22,6 +34,7 @@ aside.modal {
   aside.modal .content {
     background-color: white;
     width: 100%;
+    font-family: GTWalshiemPro;
     max-width: 700px;
     height: -webkit-fit-content;
     height: -moz-fit-content;

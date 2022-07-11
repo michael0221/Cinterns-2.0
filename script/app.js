@@ -7,7 +7,7 @@ let closeButton = document.querySelector("button");
 
 let main = document.querySelector(".contain")
 
-fetch('js/interns.json').then((res) => {
+fetch('script/interns.json').then((res) => {
   // interns = res.json();
   // console.log(res.json())
   return res.json()
@@ -52,29 +52,36 @@ const fillModal = (int) => {
 
   modalContent.innerHTML =
     `
-  <button class="close-btn">×</button>
-              <div class="content__description">
-                  <div class="content__img">
-                    <img src="${int.image}" alt="michael">
-                  </div>
-                  <div class="content__details">
-                      <h3 class="content__header">${int.name}</h3>
-                      <p style="padding-bottom:15px;"><i>${int.set} intern<i></p>
-                      <p><b>Email</b>: ${int.email}</p>
-                      <p><b>Phone </b>: ${int.phone}</p>
-                      <p><b>School</b>: ${int.school}</p>
-                      <p><b>Course</b>: ${int.course}</p>
-                      <p><b>Duration of Internship</b>: ${int.duration}</p>
-                  </div>
-              </div>
-            <div class="content__footer">
-              <div class="footer">
-                  <p> <i> "${int.testimonial}"</i></p>
-              </div>
-              <div class="footer__icon">
-                  <a href="${int.github}" target="_blank"><i class="ri-github-fill"></i></a>
-              </div>
+    <button id="close-btn" class="close-btn">×</button>
+    <div class="content__description">
+        <div class="content__img">
+          <img src="./images/Michael 2.jpeg" alt="michael">
+        </div>
+        <div class="content__details">
+            <h3 class="content__header">${int.name}</h3>
+            <p><b>Year of Internship</b>: ${int.set}</p>
+            <p><b>Email</b>: ${int.email}</p>
+            <p><b>Phone </b>: ${int.phone}</p>
+            <p><b>School</b>: ${int.school}</p>
+            <p><b>Skills</b>:${int.skills}</p>
+            <p><b>Duration of Internship</b>: ${int.duration}</p>
+  
+            <div class="socials">
+            <a href="${int.facebook}" style="color: black;" target="_blank"> <i class="ri-facebook-circle-fill" style="color: #050078;"></i></a>
+              <a href="${int.instagram}" style="color: black;" target="_blank"> <i class="ri-instagram-line" style="color: #fa2222;"></i></a>
+              <a href="${int.twitter}" style="color: black;" target="_blank"> <i class="ri-twitter-fill" style="color: #16B7EA;"></i></a>
+              <a href="${int.linkedin}" style="color: black;" target="_blank"> <i class="ri-linkedin-box-fill" style="color: #0077B5;"></i></a>
+              <a href="${int.github}" style="color: black;" target="_blank"><i class="ri-github-fill"></i></a>
             </div>
+        </div>
+    </div>
+  <div class="content__footer">
+    <div class="footer">
+        <p><i>"${int.testimonial}"</i></p>
+    </div>
+    <div class="footer__icon">
+    </div>
+  </div>
   `;
 }
 
