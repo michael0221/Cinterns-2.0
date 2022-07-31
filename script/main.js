@@ -59,7 +59,7 @@ const fillModal = (int) => {
   <button class="close-btn">×</button>
               <div class="content__description">
               <div class="content__img">
-              <img src="" alt="michael">
+              <img src="${int.image}" alt="michael">
             </div>
             <div class="content__details">
                 <h3 class="content__header">${int.name}</h3>
