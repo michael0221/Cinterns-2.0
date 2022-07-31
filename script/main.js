@@ -36,7 +36,7 @@ fetch('https://cinterns.herokuapp.com/api/getInterns.php').then((res) => {
     main.appendChild(card);
   })
 }).then(() => {
-  let cards = document.querySelectorAll(".card");
+  let cards = document.querySelectorAll(".interns-card");
   cards.forEach((v, i) => {
     v.addEventListener('click', () => {
       console.log("mike")
@@ -59,7 +59,7 @@ const fillModal = (int) => {
   <button class="close-btn">×</button>
               <div class="content__description">
               <div class="content__img">
-              <img src="${int.image}" alt="michael">
+              <img src="" alt="michael">
             </div>
             <div class="content__details">
                 <h3 class="content__header">${int.name}</h3>
