@@ -51,40 +51,49 @@ fetch('https://cinterns.herokuapp.com/api/getInterns.php').then((res) => {
   })
 })
 
+window.onclick = function(event) {
+  if (event.target == modal) {
+      modal.style.display = "none";
+      body.style.overflow = ""
+  }
+}
 
 const fillModal = (int) => {
-
-  modalContent.innerHTML =
+    modalContent.innerHTML =
     `
-  <button class="close-btn">×</button>
-              <div class="content__description">
-              <div class="content__img">
-              <img src="${int.image}" alt="michael">
-            </div>
-            <div class="content__details">
-                <h3 class="content__header">${int.name}</h3>
-                <p><b>Role</b>: ${int.role}</p>
-                <p><b>Year of Internship</b>: ${int.year_of_internship}</p>
-                <p><b>Email</b>: ${int.email}</p>
-                <p><b>Address</b>: ${int.city}, ${int.state}, ${int.country}. </p>
-                <p><b>School</b>: ${int.school}</p>
-                <p><b>Major</b>: ${int.major}</p>
-                <p><b>Skills</b>:${int.skills}</p>
-      
-                <div class="socials">
-                  <a href="${int.linkedin}" style="color: black;" target="_blank"> <i class="ri-linkedin-box-fill" style="color: #0077B5;"></i></a>
-                  <a href="${int.github}" style="color: black;" target="_blank"><i class="ri-github-fill"></i></a>
-                </div>
-            </div>
-        </div>
-      <div class="content__footer">
-        <div class="footer">
-            <p><i>"${int.experience}"</i></p>
-        </div>
-        <div class="footer__icon">
-        </div>
-            </div>
-  `;
+    <i class="ri-close-circle-fill close-btn" id="close-btn"></i>
+    <div class="content__description">
+      <div class="img-socials">
+          <img src="${int.image}" alt="${int.name}">
+          <div class="socials">
+              <a href="${int.linkedin}" target = "_blank"><i class="ri-linkedin-box-fill"></i></a>
+              <a href="${int.github}" target = "_blank"><i class="ri-github-fill"></i></a>
+          </div>
+      </div>
+      <div class="description-testimony">
+          <div class="description">
+              <div>
+                  <b><span>Name: </span></b>${int.name}
+              </div>
+              <div>
+                  <b><span>School: </span></b>${int.school}
+              </div>
+              <div>
+                  <b><span>Email: </span></b>${int.email}
+              </div>
+              <div>
+                  <b><span>Location: </span></b>${int.city}, ${int.state}, ${int.country}.
+              </div>
+              <div>
+                  <b><span>Skills: </span></b>${int.skills}
+              </div>
+          </div>
+          <div class="testimony">
+              <em>“${int.experience}”</em>
+          </div>
+      </div>
+    </div>
+    `
 }
 
 // fetch("https://cinterns.herokuapp.com/api/getInterns.php").then(res => res.json()).then(data => console.log(data))
