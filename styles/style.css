@@ -83,7 +83,9 @@
   z-index: 1000;
   color: #0e100f;
 }
-
+.scroll{
+  margin-top: 50px;
+}
 .box {
   width: 490px;
   position: relative;
@@ -309,4 +311,141 @@ color: rgba(0, 0, 0, 0.5);
     width: 100%;
 height: 279px;
 background: #0E100F;
+  }
+
+  @media (max-width: 992px){
+    header{
+      box-sizing: border-box;
+      height: 15vh;
+      width: 100vw;
+      padding: 0px 10px;
+      display: flex;
+      align-content: center;
+    }
+    header .link{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0;
+    }
+
+    header .link li{
+      margin: 0;
+      padding: 0;
+    }
+    
+    .section{
+      height: 85vh;
+      background: black;
+      padding: 0px 15px;
+    }
+    .section .header-1{
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 40px;
+      color: white;
+    }
+    
+    .section span{
+      color: #EDF345;
+    }
+
+    .section .box{
+      height: 23px;
+      bottom: 15px;
+      width: 100vw;
+      display: none;
+    }
+
+    .section .paragraph{
+      width: auto;
+      height: fit-content;
+      margin: 15px 0px;
+      padding: 0;
+      font-size: 15px;
+      font-weight: normal;
+      color: white;
+    }
+    .nav-link{
+      color: #fff;
+    }
+    .header{
+      background: #000;
+    }
+   
+    .section-2{
+      background: #E5E5E5;
+      color: #0E100F;
+      padding: 0px 15px;
+      height: 100vh;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .section-2__tab1{
+      margin: 0%;
+      align-self: center;
+    }
+
+    .section-2__tab1 h4{
+      color: #0E100F;
+      margin: 20px;
+    }
+    .scroll{
+      margin-top: 50px;
+      display: none;
+    }
+    .section-2__tab1 p{
+      width: 100%;
+      color: #0e100f;
+      font-weight: normal;
+      text-align: justify;
+    }
+
+    .section-2__tab2{
+      display: none;
+    }
+
+    .content__description{
+      flex-direction: column;
+      background: linear-gradient(180deg, rgba(229,229,229,1) 80%, rgba(0,0,0,1) 80%);
+    }
+
+    .img-socials{
+      width: 100%;
+      height: 80%;
+      font-size: 5px;
+    }
+
+    .img-socials img{
+      width: 200px;
+      height: 200px;
+      align-self: flex-start;
+    }
+
+    .socials{
+      align-self: flex-start;
+    }
+
+    .description-testimony{
+      width: 100%;
+      height: 30vh;
+      font-size: 11px;
+      text-align: start;
+      justify-content: space-around;
+    }
+    
+    .description{
+      height: 50%;
+    }
+
+    .testimony{
+      height: 30%;
+    }
+
+    .testimony em{
+      margin: auto;
+    }
+
   }
