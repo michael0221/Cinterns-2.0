@@ -5,6 +5,9 @@
       format("embedded-opentype"),
     url("../fonts/PlusJakartaDisplay-Regular.otf") format("truetype");
 }
+html{
+  scroll-behavior: smooth;
+}
 
 * {
   padding: 0;
@@ -85,6 +88,10 @@
 }
 .scroll{
   margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
 }
 .box {
   width: 490px;
@@ -145,7 +152,7 @@
 }
 
 .section-3 {
-  margin-top: 128px;
+  padding-top: 128px;
 }
 .section-3 h4 {
   /* margin-bottom: 30px; */
@@ -217,7 +224,7 @@ color: rgba(0, 0, 0, 0.5);
     font-weight: 600;
     font-size: 40px;
     line-height: 50px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     color: #000;
     text-align: center;
   }
@@ -405,6 +412,9 @@ background: #0E100F;
 
     .section-2__tab2{
       display: none;
+    }
+    .section-2__tab{
+      padding-bottom: 0px;
     }
 
     .content__description{
